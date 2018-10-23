@@ -14,7 +14,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect("mongod://localhost/unit18Populater", {useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/YourDB", { useNewUrlParser: true });
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(MONGODB_URI);
+
 
 app.get("/scrape", function(req, res) {
 

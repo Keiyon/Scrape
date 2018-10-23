@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>First Scrape</title>
+    <style>
+      body { background-color: rgb(16, 233, 222) }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 65%;
+        height: 725px;
+      }
+      #thoughts {
+        float: right;
+        width: 35%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: rgb(15, 216, 48);
+      }
+      input {
+        height: 40px;
+        font-size: 28px;
+      }
+      textarea {
+        height: 180px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>S C R A P P E R</h1>
+      <h2><i>This looked just like the class assignment</i></h2>
+      <div id="articles"></div>
+      <div id="thoughts"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
